@@ -51,8 +51,8 @@ FROM ${DOCKER_FROM} AS runtime
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-LABEL maintainer="Qwen3-TTS Server"
-LABEL description="Drop-in replacement for F5-TTS server using Qwen3-TTS"
+LABEL maintainer="VoxFlow"
+LABEL description="VoxFlow — drop-in replacement for F5-TTS server using Qwen3-TTS"
 
 # Install only runtime dependencies (no build tools)
 RUN apt-get update && apt-get install -y --no-install-recommends \
